@@ -1,4 +1,4 @@
-var table = $('#dataTable')
+var table = $('#dataTable.display')
     .DataTable({
         paging: true,
         lengthChange: true,

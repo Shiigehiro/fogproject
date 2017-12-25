@@ -968,7 +968,7 @@ abstract class FOGPage extends FOGBase
                 //     . '">';
             }
             // TODO: Generalize to support multiple tables on the same page (passable ids)
-            echo '<table id="dataTable" class="table table-bordered table-striped'
+            echo '<table id="dataTable" class="display table table-bordered table-striped'
                 . (
                     count($this->data) < 1 ?
                     ' noresults' :
@@ -4376,6 +4376,8 @@ abstract class FOGPage extends FOGBase
     /**
      * Build our form elements.
      *
+     * @param mixed $fields The fields to use to generate our forms.
+     *
      * @return string
      */
     public static function formFields($fields) {
@@ -4394,6 +4396,64 @@ abstract class FOGPage extends FOGBase
             echo '<br/>';
             unset($field, $input);
         }
+        return ob_get_clean();
+    }
+    /**
+     * Build our nav-tabs elements.
+     *
+     * @param mixed $tabData The tabs we are going to build out.
+     *
+     * @return string
+     */
+    public static function tabFields($tabData) {
+        ob_start();
+        $activeId = '';
+        echo '<div class="nav-tabs-custom">';
+        echo '<ul class="nav nav-tabs">';
+        foreach ($tabData as &$entry) {
+            $name = $entry['name'];
+            $id = $entry['id'];
+            if (empty($activeId)) {
+                $activeId = $id;
+            }
+            $isActive = ($activeId === $id);
+            echo '<li class="'
+                . (
+                    $isActive ?
+                    'active' :
+                    ''
+                )
+                . '">';
+            echo '<a href="#'
+                . $id
+                . '" data-toggle="tab" ariaexpanded="true">'
+                . $name
+                . '</a>';
+            echo '</li>';
+            unset($entry);
+        }
+        echo '</ul>';
+        echo '<div class="tab-content">';
+        foreach ($tabData as &$entry) {
+            $generator = $entry['generator'];
+            $name = $entry['name'];
+            $id = $entry['id'];
+            $isActive = ($activeId === $id);
+            echo '<div id="'
+                . $id
+                . '" class="tab-pane '
+                . (
+                    $isActive ?
+                    'active' :
+                    ''
+                )
+                . '">';
+            $generator();
+            echo '</div>';
+            unset($entry);
+        }
+        echo '</div>';
+        echo '</div>';
         return ob_get_clean();
     }
 }
