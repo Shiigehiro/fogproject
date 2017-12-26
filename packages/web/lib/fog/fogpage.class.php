@@ -407,7 +407,37 @@ abstract class FOGPage extends FOGBase
             'SEARCH_PAGES',
             array('searchPages' => &self::$searchPages)
         );
-        //$this->menu = self::buildSubMenuItems($node);
+        /**
+         * This builds our form action dynamically.
+         */
+        $data = [];
+        $nodestr = $substr = $idstr = $typestr = $tabstr = false;
+        $formstr = '../management/index.php?';
+        if ($node) {
+            $data['node'] = $node;
+        }
+        if ($sub) {
+            $data['sub'] = $sub;
+        }
+        if ($id) {
+            $data['id'] = $id;
+        }
+        if ($type) {
+            $data['type'] = $type;
+        }
+        if ($f) {
+            $data['f'] = $f;
+        }
+        if ($tab) {
+            $tabstr = "#$tab";
+        }
+        if (count($data) > 0) {
+            $formstr .= http_build_query($data);
+        }
+        if ($tabstr) {
+            $formstr .= $tabstr;
+        }
+        $this->formAction = $formstr;
     }
     /**
      * Creates the main menu items.
