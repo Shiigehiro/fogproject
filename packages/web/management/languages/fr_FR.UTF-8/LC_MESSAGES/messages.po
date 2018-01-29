@@ -20,105 +20,103 @@ msgstr ""
 #: /var/www/fog/status/getfiles.php:27
 #, fuzzy
 msgid "Invalid"
-msgstr "ID invalide"
+msgstr "invalide"
 
 #: /var/www/fog/status/getfiles.php:43
 #: /var/www/fog/lib/service/imagesize.class.php:208
 #, fuzzy
 msgid "Path is unavailable"
-msgstr "Pas de hachage disponible"
+msgstr "Chemin indisponible"
 
 #: /var/www/fog/status/logtoview.php:31 /var/www/fog/status/logtoview.php:130
 #, fuzzy
 msgid "Invalid IP"
-msgstr "ID invalide"
+msgstr "IP invalide"
 
 #: /var/www/fog/status/logtoview.php:37 /var/www/fog/status/logtoview.php:136
 #, fuzzy
 msgid "Invalid File"
-msgstr "dossier non valide"
+msgstr "Fichier invalide"
 
 #: /var/www/fog/status/logtoview.php:81
 msgid "Invalid Folder"
-msgstr "dossier non valide"
+msgstr "Dossier invalide"
 
 #: /var/www/fog/status/logtoview.php:87
 msgid "Unable to open file for reading"
-msgstr "Impossible d'ouvrir le fichier pour la lecture"
+msgstr "Impossible d'ouvrir le fichier en lecture"
 
 #: /var/www/fog/status/logtoview.php:162
 msgid "IP Passed is incorrect"
-msgstr "IP Passé est incorrect"
+msgstr "L'IP transmisse est incorrecte"
 
 #: /var/www/fog/status/bandwidth.php:44
 #, fuzzy
 msgid "Device must be a string"
-msgstr "Événement doit être une chaîne"
+msgstr "Périphérique doit être une chaine de caractères"
 
 #: /var/www/fog/status/bandwidth.php:47
 #, fuzzy
 msgid "File must be a string"
-msgstr "Événement doit être une chaîne"
+msgstr "Fichier doit être une chaine de caractères"
 
 #: /var/www/fog/status/bandwidth.php:50
 msgid "Only tx and rx bytes files can be read"
-msgstr ""
+msgstr "Seul les octets tx et rx peuvent etre lu"
 
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:141
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:205
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:264
 #, fuzzy
 msgid "Node must be a string"
-msgstr "Événement doit être une chaîne"
+msgstr "Node doit être une chaîne"
 
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:146
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:210
 msgid "Items must be an array"
-msgstr ""
+msgstr "Objets doit être un tableau"
 
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:269
 msgid "Data must be an array or a callable item."
-msgstr ""
+msgstr "Donnée doit etre un tableau ou un objet appelable"
 
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:313
 #, fuzzy
 msgid "Info"
-msgstr "Dans "
+msgstr "Info"
 
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:559
 #, fuzzy
 msgid "Title must be a string"
-msgstr "Événement doit être une chaîne"
+msgstr "Titre doit être une chaine de caractères"
 
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:575
 #: /var/www/fog/lib/fog/fogsubmenu.class.php:592
 #, fuzzy
 msgid "Link must be a string"
-msgstr "Événement doit être une chaîne"
+msgstr "Lien doit être une chaine de caractères"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:58
 #: /var/www/fog/lib/fog/eventmanager.class.php:144
 msgid "Event must be a string"
-msgstr "Événement doit être une chaîne"
+msgstr "Événement doit être une chaine de caractères"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:61
 msgid "Listener must be an array or an object"
-msgstr ""
+msgstr "Listener doit etre un tableau ou un objet"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:66
 msgid "Class must extend event"
-msgstr "Classe doit prolonger l'événement"
+msgstr "Classe doit étendre l'événement"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:76
 #, fuzzy
 msgid "Second paramater must be in array(class,function)"
-msgstr ""
-"Deuxième paramètre doit être sous la forme array (classe Hook, fonction à "
-"exécuter)"
+msgstr "Deuxième paramètre doit être sous la forme array (classe, fonction)"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:80
 msgid "Class must extend hook"
-msgstr "Classe doit se prolonger crochet"
+msgstr "Classe doit étendre hook"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:85
 msgid "Method does not exist"
@@ -126,7 +124,7 @@ msgstr "Méthode n'existe pas"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:95
 msgid "Register must be managed from hooks or events"
-msgstr ""
+msgstr "Inscription doit etre géré par hooks ou évenements"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:102
 #, fuzzy
@@ -164,12 +162,12 @@ msgstr "Erreur"
 #: /var/www/fog/lib/fog/eventmanager.class.php:168
 #, fuzzy
 msgid "Event"
-msgstr "Ajouter un évènement"
+msgstr "Événement"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:107
 #, fuzzy
 msgid "Class"
-msgstr "les tâches"
+msgstr "Classe"
 
 #: /var/www/fog/lib/fog/eventmanager.class.php:147
 #, fuzzy
